@@ -1,0 +1,213 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Guide Line */
+
+
+/* div#wrap{border: 1px solid #000;} */
+
+
+/* Guide Line */
+
+
+/* 공통영역 시작 */
+
+div#wrap {
+    width: 100%;
+    margin: 10px auto;
+}
+
+#join fieldset {
+    border: none;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+}
+
+#join fieldset legend {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.xBtn {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: bottom;
+    border: none;
+    border-radius: 20px;
+    background-color: #ddd;
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    bottom: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* 공통영역 끝 */
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+#join {
+    width: 600px;
+    padding: 60px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#join h2 {
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+#join .input {
+    padding: 5px 0 5px;
+    position: relative;
+}
+
+#join .input input {
+    width: 300px;
+    padding: 4px 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#join .input input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#join #email #mail {
+    color: #666;
+    font-weight: bold;
+    text-align: right;
+    margin-left: 80px;
+}
+
+#join ul {
+    margin-bottom: 50px;
+}
+
+#join .info {
+    color: #888;
+    font-size: 11px;
+    font-weight: bold;
+    list-style: inside;
+}
+
+#join .marginBottom {
+    margin-bottom: 50px;
+}
+
+#join #nickname #CntnumOfWord {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 130px;
+}
+
+#join select {
+    padding: 5px 10px;
+    border: none;
+    border-right: 1px solid #aaa;
+}
+
+#join #button {
+    text-align: right;
+    margin: 40px 0 25px;
+}
+
+#join #button button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#join #birth {
+    padding: 5px 0;
+}
+
+#join #birth select {
+    width: 100px;
+}
+
+#join #birth #lunarCalendar {
+    width: 30px;
+    margin-left: 80px;
+}
+
+#join #gender {
+    border: none;
+    margin-bottom: 60px;
+}
+
+#join #gender label {
+    margin-right: 30px;
+}
+
+#join #gender label input {
+    margin-right: 5px;
+}
+
+#join #next {
+    text-align: center;
+}
+
+#join #next button {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+}
+
+#footer {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 40px;
+}
+
+#footer #corpInfo ul {
+    list-style: none;
+}
+
+#footer #corpInfo ul li {
+    padding: 5px;
+    display: inline-block;
+}
+
+#footer #corpInfo ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+#footer #copyright {
+    margin: 6px 0 20px;
+}
+
+#footer #copyright span {
+    font-weight: bold;
+}
