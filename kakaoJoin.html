@@ -50,12 +50,12 @@
 
                 <fieldset class="input selectFieldset">
                     <legend>전화번호</legend>
-                    <select>
+                    <select id="phoneNum">
                         <option value="+1"><span class="num">+1</span><span class="national">Canada</span></option>
-                        <option value="+1"><span class="num">+1</span><span>United States</span></option>
-                        <option value="+81"><span class="num">+81</span><span>Japan</span></option>
-                        <option value="+86"><span class="num">+86</span><span>China</span></option>
-                        <option value="+82" selected><span class="num">+82</span><span>대한민국</span></option>
+                        <option value="+1"><span class="num">+1</span><span class="national">United States</span></option>
+                        <option value="+81"><span class="num">+81</span><span class="national">Japan</span></option>
+                        <option value="+86"><span class="num">+86</span><span class="national">China</span></option>
+                        <option value="+82" selected><span class="num">+82</span class="national"><span>대한민국</span></option>
                     </select>
                     <input type="text" placeholder="전화번호" class="selectInput">
                     <span class="xBtn">&times;</span>
@@ -71,7 +71,7 @@
                     <select id="month"></select>
                     <select id="day"></select>
                     <label class="chkboxContainer" checked="checked">음력
-                        <input type="checkbox" id="lunarCalendar">
+                        <input type="checkbox">
                         <span class="chkboxCheckmark"></span>
                     </label>
                 </fieldset>

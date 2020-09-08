@@ -35,9 +35,13 @@
     bottom: 8px;
     cursor: pointer;
     display: none;
+}    
+#join select {
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-right: 1px solid #aaa;
 }
-
-
 /* Guide Line */
 
 
@@ -126,11 +130,21 @@ h1 {
     margin-left: 120px;
 }
 
-#join select {
-    padding: 5px 10px;
-    border: none;
-    border-right: 1px solid #aaa;
+/* 전화번호 셀렉트박스 화살표 커스텀 시작 */
+#join select#phoneNum {
+
+    width: 116px;
+    padding: 6px 0;
+    
+    -webkit-appearance: none;
+    
+    background-image: url(../images/arrowDown.png);
+    background-repeat: no-repeat;
+    background-size: 14px 10px;
+    background-position: 94px center;
 }
+/* 전화번호 셀렉트박스 화살표 커스텀 끝 */
+
 
 #join #button {
     text-align: left;
@@ -151,16 +165,20 @@ h1 {
     padding: 5px 0;
     margin-bottom: 15px;
 }
-
+/* 생일 셀렉트박스 화살표 커스텀 시작 */
 #join #birth select {
     width: 80px;
-    border: none;
+    padding: 6px 0;
+    border-right: none;
+    
+    -webkit-appearance: none;
+    
+    background-image: url(../images/arrowDown.png);
+    background-repeat: no-repeat;
+    background-size: 14px 10px;
+    background-position: 60px center;
 }
-
-
-#join #birth #lunarCalendar {
-    width: 30px;
-}
+/* 생일 셀렉트박스 화살표 커스텀 끝 */
 
 /* 체크박스 커스텀 시작 */
 /* label container */

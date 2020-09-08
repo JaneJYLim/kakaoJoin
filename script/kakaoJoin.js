@@ -49,7 +49,6 @@ function ChangeFieldsetBorderColor() {
     //}
 }
 ChangeFieldsetBorderColor();
-
 //focus일 때, fieldset border-bottom 색 변경 끝
 
 
@@ -69,6 +68,7 @@ function fnLength() {
 }
 document.querySelector("#putName").addEventListener("keyup", fnLength);
 //닉네임 글자수에 따른 CntNumber 변동 끝
+
 
 // 생년월일 옵션(select) 시작
 //출생년도 표시 시작
@@ -167,3 +167,10 @@ function fnReset() {
 
 year.addEventListener("change", fnReset);
 // 생년월일 옵션(select) 끝
+
+//유효성검사 시작
+
+
+
+
+//유효성검사 끝
