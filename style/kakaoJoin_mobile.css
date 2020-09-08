@@ -157,10 +157,85 @@ h1 {
     border: none;
 }
 
+
 #join #birth #lunarCalendar {
     width: 30px;
-    margin-left: 100px;
 }
+
+/* 체크박스 커스텀 시작 */
+/* label container */
+
+.chkboxContainer {
+    display: inline-block;
+    position: relative;
+    padding-left: 26px;
+    margin-left: 110px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 원래 체크박스 사라지게하기 */
+
+.chkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+/* 커스텀 체크박스 구현 */
+
+.chkboxCheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    color: #cccccc;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    
+}
+
+/* 체크 되었을때 배경색 */
+
+.chkboxContainer input:checked~.chkboxCheckmark {
+    border: 2px solid rgb(255, 201, 25);
+    background-color: rgb(255, 201, 25);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.chkboxCheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.chkboxContainer input:checked~.chkboxCheckmark:after {
+    display: block;
+}
+
+.chkboxContainer .chkboxCheckmark:after {
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* 체크박스 커스텀 끝 */
 
 #join #gender {
     border: none;
@@ -174,6 +249,76 @@ h1 {
 #join #gender label input {
     margin-right: 5px;
 }
+
+/* 라디오박스 커스텀 시작 */
+
+/* The container */
+.radioContainer {
+    display: inline-block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radioContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .radioboxCheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radioContainer:hover input ~ .radioboxCheckmark {
+    background-color: #fff;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radioContainer input:checked ~ .radioboxCheckmark {
+    border: 2px solid rgb(255, 201, 25);;
+    background-color: #fff;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .radioboxCheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radioContainer input:checked ~ .radioboxCheckmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radioContainer .radioboxCheckmark:after {
+       top: 4px;
+      left: 4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: rgb(255, 201, 25);
+  }
+
+/* 라디오박스 커스텀 끝 */
 
 #join #next {
     text-align: center;

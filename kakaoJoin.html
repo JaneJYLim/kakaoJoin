@@ -70,16 +70,25 @@
                     <select id="year"></select>
                     <select id="month"></select>
                     <select id="day"></select>
-                    <label>
-                        <input type="checkbox" id="lunarCalendar">음력
-                        <span class=""></span>
+                    <label class="chkboxContainer" checked="checked">음력
+                        <input type="checkbox" id="lunarCalendar">
+                        <span class="chkboxCheckmark"></span>
                     </label>
                 </fieldset>
 
                 <fieldset id="gender">
-                    <label><input type="radio" name="gender" value="1" checked>선택안함</label>
-                    <label><input type="radio" name="gender" value="2">여성</label>
-                    <label><input type="radio" name="gender" value="3">남성</label>
+                    <label class="radioContainer">
+                        <input type="radio" name="gender" value="1" checked="checked">선택안함
+                        <span class="radioboxCheckmark"></span>
+                    </label>
+                    <label class="radioContainer">
+                        <input type="radio" name="gender" value="2">여성
+                        <span class="radioboxCheckmark"></span>
+                    </label>
+                    <label class="radioContainer">
+                        <input type="radio" name="gender" value="3">남성
+                        <span class="radioboxCheckmark"></span>
+                    </label>
                 </fieldset>
 
                 <div id="next">
