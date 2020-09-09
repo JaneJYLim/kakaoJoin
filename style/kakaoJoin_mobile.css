@@ -42,14 +42,15 @@
     border: none;
     border-right: 1px solid #aaa;
 }
-/* Guide Line */
-
-
-/* div#wrap{border: 1px solid #000;} */
-
-
-/* Guide Line */
-
+.errorMessage {
+    color: #e71414;
+    font-size: 12px;
+    margin-bottom: 15px;
+    position: relative;
+    top: -10px;
+    left: 3px;
+    display: none;
+}
 
 /* 공통영역 시작 */
 
